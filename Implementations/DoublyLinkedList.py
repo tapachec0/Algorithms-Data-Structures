@@ -138,19 +138,17 @@ class DoublyLinkedList:
                 aux = aux.after
                 cont += 1
                 
-    def copy(self, doublyLinkedList):
+    def copy(self):
         
         self.newObject = DoublyLinkedList()
         cont = 0
-        aux = self.head
-        tam =  int(doublyLinkedList.__len__())
+        aux = self.head.after
+        tam =  int(self.__len__())
         
         while(cont < tam):
-            item = doublyLinkedList.__getitem__(cont)
-            aux.after = Node(item,aux)
-            self.newObject.append(aux.after)
+            self.newObject.append(aux.item)
             aux = aux.after
-            cont = cont + 1
+            cont += 1
         self.tail = aux
             
         return self.newObject
@@ -288,3 +286,23 @@ class DoublyLinkedList:
 
         string += "])"
         return string
+    
+'''def concanate(list1, list2):
+    list3 = DoublyLinkedList()
+    cont = 0
+    while(cont < len(list1)):
+        list3.append(list1[cont])
+        cont += 1
+    cont = 0
+    while(cont < len(list2)):
+        list3.append(list2[cont])
+        cont += 1
+
+    return list3'''
+def concanate(list1, list2):
+    list1.tail.after = list2.head.after
+    list2.head.after.prev = list1.tail
+    return list1
+    
+    
+    
