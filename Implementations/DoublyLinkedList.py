@@ -23,24 +23,12 @@ class DoublyLinkedList:
             self.tail = self.head
             
         else:
-            cont = 0
             aux = self.head
-            
-            if(type(iterable) == str):
-                string = ""
-                while(cont < len(iterable)):
-                    char = iterable[cont]
-                    string += char
-                    cont += 1
-                aux.after = Node(string, aux)
+            for element in iterable:
+                aux.after = Node(element, aux)
                 aux = aux.after
-                
-            else:
-                while(cont < len(iterable)):
-                    aux.after = Node(iterable[cont],aux)
-                    aux = aux.after
-                    cont += 1
             self.tail = aux
+                
 
     def isEmpty(self):
         
@@ -107,17 +95,22 @@ class DoublyLinkedList:
             
     def eliminate(self, item):
         
-        if(self.__contains(item) == False):
+        if(self.__contains__(item) == False):
             raise ValueError("Item not found")
         
         else:
             cont = 0
+            tam = self.__len__()
             aux = self.head.after
-            while(cont < self.__len__()):
+            while(cont < tam):
+                print(self.__len__())
                 keepFinding = aux
                 if(aux.item == item):
-                    aux.prev.after = aux.after
-                    aux.after.prev = aux.prev
+                    if(aux.after == None):
+                        aux.prev.after = aux.after
+                    else:
+                        aux.prev.after = aux.after
+                        aux.after.prev = aux.prev
                     del keepFinding
                 aux = aux.after
                 cont += 1
@@ -154,24 +147,10 @@ class DoublyLinkedList:
         return self.newObject
         
     def extend(self, iterable):
-        #FALTANDO SE FOR UM DICIONARIO
-        cont = 0
-        tam = len(iterable)
-        
-        if(type(iterable) == str):
-            string = ""
-            while(cont < tam):
-                char = iterable[cont]
-                string += char
-                cont += 1
-            self.append(string)
-            
-            
-        else:
-            while(cont < tam):
-                item = iterable[cont]
-                self.append(item)
-                cont += 1
+       
+        for item in iterable:
+            self.append(item)
+
                 
     def switch(self, index1, index2):
         
