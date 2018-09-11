@@ -180,6 +180,9 @@ class DoublyLinkedList:
             self.__setitem__(index1, self.secondValue)
             self.__setitem__(index2, self.firstValue)
             
+    def __iter__(self):
+        return DoublyLinkedListIterator(self)
+            
     def __contains__(self, item):
         
         aux = self.head.after
@@ -266,6 +269,24 @@ class DoublyLinkedList:
         string += "])"
         return string
     
+    
+
+class DoublyLinkedListIterator:
+    
+    def __init__(self, doublyLinkedList):
+        self.firstPosition = doublyLinkedList.head
+        
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        self.firstPosition = self.firstPosition.after
+        if(self.firstPosition == None):
+            raise StopIteration
+        return self.firstPosition.item
+   
+    
+    
 '''def concanate(list1, list2):
     list3 = DoublyLinkedList()
     cont = 0
@@ -276,12 +297,10 @@ class DoublyLinkedList:
     while(cont < len(list2)):
         list3.append(list2[cont])
         cont += 1
-
     return list3'''
 def concanate(list1, list2):
     list1.tail.after = list2.head.after
     list2.head.after.prev = list1.tail
     return list1
-    
     
     
