@@ -226,6 +226,7 @@ class DoublyLinkedList:
             self.__setitem__(index2, self.firstValue)
             
     def __iter__(self):
+
         #torna o objeto da lista duplamente encadeada iteravel
         return DoublyLinkedListIterator(self)
             
@@ -345,10 +346,11 @@ class DoublyLinkedListIterator:
         return self.firstPosition.item
    
 
-
 def concanate(list1, list2):
     '''
     Junta duas listas. O princípio é ligar como o proximo elemento do ultimo da primeira lista ao primeiro elemento da segunda lista.
     '''
     list1.tail.after = list2.head.after
     return list1
+
+    
