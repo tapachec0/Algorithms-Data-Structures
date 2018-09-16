@@ -1,3 +1,18 @@
+'''
+ Univesidade Federal de Pernambuco -- UFPE (http://www.ufpe.br)
+ Centro de Informatica -- CIn (http://www.cin.ufpe.br)
+ Bacharelado em Sistemas de Informacao
+ IF969 -- Algoritmos e Estruturas de Dados
+
+ Autor:	Talyta Maria Rosas Pacheco
+ Email:	tmrp@cin.ufpe.br
+ Data:	2018-09-07
+
+ Descricao: Implementação de uma lista duplamente encadeada  
+ Copyright(c) 2018 Talyta Pacheco
+ '''
+
+
 class Node:
     
     def __init__(self, item = None, previous = None, after = None):
@@ -67,11 +82,13 @@ class DoublyLinkedList:
         else:
             return self.append(item)
 
-    #padaro ultimo
-    def pop(self, index):
+    
+    def pop(self, index = None):
         '''
         Remove o elemento de um índice desejado. Sendo por padrão, o último índice
         '''
+        if(index == None):
+            index = self.__len__()-1
         if(self.isEmpty()):
             print("List is empty")
             
@@ -79,13 +96,14 @@ class DoublyLinkedList:
             raise IndexError("Index out of Range")
         
         else:
+            
             aux = self.head.after
             cont = 0
             while(cont != index):
                 aux = aux.after
                 cont += 1
+                
             aux.prev.after = aux.after
-            
             #caso o elemento que foi removido seja o ultimo, altera a ligação do último para o anterior do último
             if(aux.after == None):
                 self.tail = aux.prev
@@ -351,6 +369,7 @@ def concanate(list1, list2):
     Junta duas listas. O princípio é ligar como o proximo elemento do ultimo da primeira lista ao primeiro elemento da segunda lista.
     '''
     list1.tail.after = list2.head.after
+    list2.head.after.prev = list1.tail
     return list1
 
     
