@@ -23,11 +23,8 @@ class Documento:
             linha = self.__arquivo.readline()
 
         self.__vetorPalavras = numpy.asarray(listaPalavras)
-        #print(self.__vetorPalavras)
+       
         
-        
-
-
     def gerarNGramas(self, n):
 
         indice = 0
@@ -37,9 +34,7 @@ class Documento:
             self.__listaNGramas.append(nGrama)
             indice += 1
 
-        #print(self.__listaNGramas)
         
-
     def contencao(self, nomeDocumento):
         
         documentoSuspeito = Documento(nomeDocumento)
@@ -47,13 +42,13 @@ class Documento:
         conjuntoNGramasIguais = 0
         for nGramaOficial in self.__listaNGramas:
             for nGramaSuspeito in documentoSuspeito.__listaNGramas:
-                if(numpy.array_equal(numpy.array(nGramaOficial),numpy.array(nGramaSuspeito))):
+                if(nGramaOficial == nGramaSuspeito):
                     conjuntoNGramasIguais += 1
+                    print(conjuntoNGramasIguais)
                     print("entrei")
-                else:
-                    print("bunda")
+               
                 
-        contencao = conjuntoNGramasIguais / len(documentoSuspeito.gerarNGramas(self.__n))
+        contencao = conjuntoNGramasIguais / len(documentoSuspeito.__listaNGramas)
         print(contencao)
                     
         
