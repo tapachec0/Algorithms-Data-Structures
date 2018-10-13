@@ -33,6 +33,7 @@ class NGrama:
 
     def __repr__(self):
         return str(self.__vector)
+    
     def __eq__(self, otherObject):
         return (self.__vector == otherObject.__vector).all() == True
     

@@ -44,12 +44,11 @@ class Documento:
             for nGramaSuspeito in documentoSuspeito.__listaNGramas:
                 if(nGramaOficial == nGramaSuspeito):
                     conjuntoNGramasIguais += 1
-                    print(conjuntoNGramasIguais)
-                    print("entrei")
+                    
                
                 
         contencao = conjuntoNGramasIguais / len(documentoSuspeito.__listaNGramas)
-        print(contencao)
+        
                     
         
         
