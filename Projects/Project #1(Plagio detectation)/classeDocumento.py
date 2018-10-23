@@ -1,3 +1,17 @@
+'''
+ Univesidade Federal de Pernambuco -- UFPE (http://www.ufpe.br)
+ Centro de Informatica -- CIn (http://www.cin.ufpe.br)
+ Bacharelado em Sistemas de Informacao
+ IF969 -- Algoritmos e Estruturas de Dados
+
+ Autor:	Talyta Maria Rosas Pacheco
+ Email:	tmrp@cin.ufpe.br
+ Data:	2018-09-29
+
+ Descricao: Formação de vetores de palavras a partir de uma lista de palavras 
+ Copyright(c) 2018 Talyta Pacheco
+ '''
+
 import numpy
 from DoublyLinkedList import *
 from classeNGrama import NGrama
@@ -8,7 +22,7 @@ class Documento:
         
         listaPalavras = DoublyLinkedList()
         self.__listaNGramas = DoublyLinkedList()
-        self.__arquivo = open(documento, "r")
+        self.__arquivo = open(documento, "r", encoding="utf8")
         palavra = ""
         linha = self.__arquivo.readline()
         while(linha != ""):
@@ -35,9 +49,8 @@ class Documento:
             indice += 1
 
         
-    def contencao(self, nomeDocumento):
+    def contencao(self, documentoSuspeito):
         
-        documentoSuspeito = Documento(nomeDocumento)
         documentoSuspeito.gerarNGramas(self.__n)
         conjuntoNGramasIguais = 0
         for nGramaOficial in self.__listaNGramas:
@@ -48,6 +61,7 @@ class Documento:
                
                 
         contencao = conjuntoNGramasIguais / len(documentoSuspeito.__listaNGramas)
+        return contencao
         
                     
         
