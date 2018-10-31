@@ -1,5 +1,7 @@
+from DoublyLinkedList import *
+
 class Node:
-    def __init__(self, chave=None, valor=None):
+    def __init__(self, chave=None, valor=DoublyLinkedList()):
         self.chave = chave
         self.valor = valor
         self.filhos = [None] * 10
@@ -8,13 +10,13 @@ class TrieTree:
     def __init__(self):
         self.raiz = Node()
 
-    def inserir(self, chave, valor):
+    def inserir(self, chave, valorDocumento):
         noAtual = self.raiz
         for caractere in chave:
             if(noAtual.filhos[int(caractere)] == None):
                 noAtual.filhos[int(caractere)] = Node(caractere)
             noAtual = noAtual.filhos[int(caractere)]
-        noAtual.valor = valor
+        noAtual.valor.append(valorDocumento)
 
     def buscar(self,chave):
         noAtual = self.raiz
