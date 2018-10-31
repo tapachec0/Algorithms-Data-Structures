@@ -17,6 +17,7 @@ from classeDocumento import *
 from DoublyLinkedList import *
 import os
 
+
 class Corpus:
     def __init__(self, pastaArquivo):
         self.__documentos = self.lerArquivos(pastaArquivo)
@@ -28,7 +29,6 @@ class Corpus:
             documentosReferencia.append(documento)
         return documentosReferencia
    
-
     def verificaPlagio(self, documentoSuspeito, limiar, tamanhoNGrama):
         documentosPossiveisPlagiados = DoublyLinkedList()
         documentosOrdenados = DoublyLinkedList()

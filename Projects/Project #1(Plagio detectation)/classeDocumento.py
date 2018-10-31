@@ -35,27 +35,39 @@ class Documento:
                 else:
                     palavra += caractere
             linha = self.__arquivo.readline()
+        listaPalavras.append(palavra)
+        
+        
+        self.__vetorPalavras = numpy.array(listaPalavras)
+        
+        
 
-        self.__vetorPalavras = numpy.asarray(listaPalavras)
-       
+    
+    @property
+    def palavras(self):
+        return self.__vetorPalavras
+
+    @property
+    def NGramas(self):
+        return self.__listaNGramas
         
     def gerarNGramas(self, n):
-
+    
         indice = 0
         self.__n = n
         while(indice <= (self.__vetorPalavras.size - self.__n)):
-            nGrama = NGrama(self.__n, self.__vetorPalavras, indice)
+            nGrama = NGrama(indice, indice + (self.__n-1), self)
             self.__listaNGramas.append(nGrama)
             indice += 1
 
-        
+                
     def contencao(self, documentoSuspeito):
         
         documentoSuspeito.gerarNGramas(self.__n)
         conjuntoNGramasIguais = 0
         for nGramaOficial in self.__listaNGramas:
             for nGramaSuspeito in documentoSuspeito.__listaNGramas:
-                if(nGramaOficial == nGramaSuspeito):
+                if(str(nGramaOficial) == str(nGramaSuspeito)):
                     conjuntoNGramasIguais += 1
                     
                

@@ -16,24 +16,19 @@
 import numpy
 
 class NGrama:
-    def __init__(self, n, listaPalavrasDocumento, indice):
+    def __init__(self, inicio, fim, objetoDocumento):
         
-        self.__n = n #quantidade de palavras no vetor 
-        self.__listaPalavrasDocumento = listaPalavrasDocumento #lista de palavras separadas na classe Documento
-        self.__vector = numpy.empty(self.__n, dtype=object)
-        self.__indice = indice #indice inicial para pegar palavras da lista
-        cont = 0
-        while(cont < self.__n):
-            self.__vector[cont] = self.__listaPalavrasDocumento[self.__indice]
-            self.__indice += 1
-            cont += 1
-
+        self.__intervalo = numpy.array([inicio, fim])
+        self.__documento = objetoDocumento
+        
     def __str__(self):
-        return str(self.__vector)
+        return ' '.join(self.__documento.palavras[i] for i in range (
+                self.__intervalo[0], self.__intervalo[1]+1))
 
     def __repr__(self):
-        return str(self.__vector)
-    
+        return self.__str__()
+        
     def __eq__(self, otherObject):
-        return (self.__vector == otherObject.__vector).all() == True
+        return (self.__intervalo == otherObject.__intervalo).all() == True
     
+
