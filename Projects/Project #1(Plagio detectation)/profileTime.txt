@@ -1,218 +1,222 @@
-         160538305 function calls (160537433 primitive calls) in 643.255 seconds
+         87038542 function calls (87037670 primitive calls) in 246.314 seconds
 
    Ordered by: cumulative time
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
-        1    0.000    0.000  643.255  643.255 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1073(wrapper)
-        1    0.000    0.000  643.153  643.153 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:659(f)
-        1    0.000    0.000  643.153  643.153 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\Profile.py:40(main_profileTime)
-        1    0.000    0.000  642.047  642.047 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:32(verificaPlagio)
-       20  156.240    7.812  641.972   32.099 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:52(contencao)
- 32031348  178.679    0.000  370.604    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeNGrama.py:37(__eq__)
- 32031348   50.224    0.000  191.925    0.000 {method 'all' of 'numpy.ndarray' objects}
- 32031348   75.614    0.000  141.701    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\numpy\core\_methods.py:45(_all)
- 32183067  114.345    0.000  114.345    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:360(__next__)
- 32031348   66.087    0.000   66.087    0.000 {method 'reduce' of 'numpy.ufunc' objects}
-       21    0.466    0.022    1.105    0.053 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:21(__init__)
-        1    0.000    0.000    0.970    0.970 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:22(__init__)
-        1    0.000    0.000    0.970    0.970 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:25(lerArquivos)
-       21    0.131    0.006    0.767    0.037 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:42(gerarNGramas)
-    18436    0.421    0.000    0.488    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeNGrama.py:19(__init__)
-       21    0.000    0.000    0.458    0.022 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\numpy\core\numeric.py:433(asarray)
-       21    0.069    0.003    0.458    0.022 {built-in method numpy.core.multiarray.array}
-    36934    0.150    0.000    0.294    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:60(append)
-    38947    0.159    0.000    0.257    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:246(__iter__)
-      105    0.222    0.002    0.222    0.002 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:308(__len__)
-    36979    0.144    0.000    0.144    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:18(__init__)
-    38947    0.098    0.000    0.098    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:354(__init__)
-        1    0.000    0.000    0.075    0.075 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:628(__call__)
-        1    0.000    0.000    0.075    0.075 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:643(add_function)
-        1    0.000    0.000    0.075    0.075 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:563(add)
-        1    0.000    0.000    0.074    0.074 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:946(getsourcelines)
-    18436    0.066    0.000    0.066    0.000 {built-in method numpy.core.multiarray.empty}
-        1    0.000    0.000    0.064    0.064 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:760(findsource)
-        1    0.002    0.002    0.062    0.062 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:714(getmodule)
-8160/8067    0.001    0.000    0.052    0.000 {built-in method builtins.len}
-      253    0.001    0.000    0.051    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:702(getabsfile)
-      253    0.002    0.000    0.040    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:680(getsourcefile)
-      237    0.001    0.000    0.036    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\genericpath.py:16(exists)
-      238    0.035    0.000    0.035    0.000 {built-in method nt.stat}
-      470    0.029    0.000    0.030    0.000 {method 'readline' of '_io.TextIOWrapper' objects}
-        1    0.000    0.000    0.027    0.027 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:756(show_results)
-      505    0.001    0.000    0.017    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:538(abspath)
-       10    0.000    0.000    0.016    0.002 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\run.py:354(write)
-       11    0.000    0.000    0.016    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:213(remotecall)
-      505    0.007    0.000    0.015    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:471(normpath)
-       10    0.000    0.000    0.015    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:603(__call__)
-       11    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:243(asyncreturn)
-       11    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:287(getresponse)
-       11    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:303(_getresponse)
-       11    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:263(wait)
-       22    0.014    0.001    0.014    0.001 {method 'acquire' of '_thread.lock' objects}
-       16    0.011    0.001    0.011    0.001 {method 'format' of 'str' objects}
+        1    0.000    0.000  246.314  246.314 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1073(wrapper)
+        1    0.000    0.000  246.263  246.263 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:659(f)
+        1    0.000    0.000  246.263  246.263 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\Profile.py:40(main_profileTime)
+        1    0.000    0.000  246.017  246.017 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:42(verificaPlagio)
+        2   27.564   13.782  245.982  122.991 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:61(contencao)
+  9151530   36.595    0.000  204.531    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeNGrama.py:24(__str__)
+  9152038   36.067    0.000  167.936    0.000 {method 'join' of 'str' objects}
+ 36606120   96.113    0.000  131.869    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeNGrama.py:25(<genexpr>)
+ 27454590   35.756    0.000   35.756    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:43(palavras)
+  4600779   13.868    0.000   13.868    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:360(__next__)
+        3    0.108    0.036    0.245    0.082 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:21(__init__)
+        1    0.000    0.000    0.134    0.134 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:23(__init__)
+        1    0.000    0.000    0.134    0.134 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:35(lerArquivos)
+     4301    0.021    0.000    0.108    0.000 {built-in method numpy.core.multiarray.array}
+        3    0.027    0.009    0.076    0.025 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:51(gerarNGramas)
+     8606    0.034    0.000    0.063    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:60(append)
+       15    0.044    0.003    0.044    0.003 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:308(__len__)
+        1    0.000    0.000    0.037    0.037 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:628(__call__)
+        1    0.000    0.000    0.037    0.037 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:643(add_function)
+        1    0.000    0.000    0.037    0.037 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:563(add)
+        1    0.000    0.000    0.037    0.037 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:946(getsourcelines)
+     8615    0.030    0.000    0.030    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:18(__init__)
+        1    0.000    0.000    0.026    0.026 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:760(findsource)
+        1    0.001    0.001    0.025    0.025 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:714(getmodule)
+     3906    0.013    0.000    0.021    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:246(__iter__)
+      254    0.000    0.000    0.020    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:702(getabsfile)
+     4298    0.013    0.000    0.017    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeNGrama.py:19(__init__)
+        1    0.000    0.000    0.014    0.014 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:756(show_results)
+      254    0.001    0.000    0.014    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:680(getsourcefile)
+       10    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\run.py:354(write)
+       11    0.000    0.000    0.014    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:213(remotecall)
+       10    0.000    0.000    0.013    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:603(__call__)
+       11    0.000    0.000    0.013    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:243(asyncreturn)
+       11    0.000    0.000    0.013    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:287(getresponse)
+       11    0.000    0.000    0.013    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:303(_getresponse)
+       11    0.000    0.000    0.012    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:263(wait)
+       22    0.012    0.001    0.012    0.001 {method 'acquire' of '_thread.lock' objects}
+      238    0.000    0.000    0.012    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\genericpath.py:16(exists)
+      239    0.012    0.000    0.012    0.000 {built-in method nt.stat}
        40    0.000    0.000    0.011    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\re.py:231(compile)
        40    0.000    0.000    0.011    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\re.py:286(_compile)
-        2    0.000    0.000    0.011    0.005 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:557(compile)
         1    0.000    0.000    0.010    0.010 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:935(getblock)
-       44    0.000    0.000    0.010    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:492(_tokenize)
+        2    0.000    0.000    0.010    0.005 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:557(compile)
+       43    0.000    0.000    0.010    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:492(_tokenize)
        39    0.000    0.000    0.010    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:152(_compile)
-       22    0.005    0.000    0.006    0.000 {built-in method io.open}
-        2    0.000    0.000    0.006    0.003 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:542(_code)
+      507    0.001    0.000    0.008    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:538(abspath)
+     3906    0.008    0.000    0.008    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:354(__init__)
+      507    0.004    0.000    0.007    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:471(normpath)
+8156/8063    0.001    0.000    0.006    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.005    0.003 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:542(_code)
     276/2    0.001    0.000    0.005    0.003 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:64(_compile)
         2    0.000    0.000    0.005    0.002 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:844(parse)
-     53/2    0.001    0.000    0.005    0.002 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:407(_parse_sub)
-    186/5    0.001    0.000    0.005    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:470(_parse)
-      505    0.002    0.000    0.003    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:121(splitdrive)
+     53/2    0.000    0.000    0.005    0.002 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:407(_parse_sub)
+    186/5    0.002    0.000    0.005    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:470(_parse)
       668    0.001    0.000    0.003    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:801(__and__)
-      506    0.001    0.000    0.002    0.000 {built-in method builtins.any}
-     1432    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:265(__call__)
+     1432    0.001    0.000    0.002    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:265(__call__)
+      507    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:121(splitdrive)
        11    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:223(asynccall)
-     3620    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
-      505    0.001    0.000    0.001    0.000 {built-in method nt._getfullpathname}
+        4    0.001    0.000    0.001    0.000 {built-in method io.open}
+      508    0.000    0.000    0.001    0.000 {built-in method builtins.any}
        10    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:556(__getattr__)
         1    0.000    0.000    0.001    0.001 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:574(__getmethods)
-      253    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:43(normcase)
        11    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:329(putmessage)
-       71    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:318(decode)
    370/97    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:173(getwidth)
      1432    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:515(__new__)
+     3627    0.001    0.000    0.001    0.000 {built-in method builtins.isinstance}
        27    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:96(closegroup)
-      505    0.001    0.000    0.001    0.000 {method 'split' of 'str' objects}
-      270    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:643(getfile)
-      759    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:687(<genexpr>)
-     1263    0.001    0.000    0.001    0.000 {method 'replace' of 'str' objects}
-      567    0.001    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:64(ismodule)
-     1768    0.001    0.000    0.001    0.000 {built-in method nt.fspath}
+      125    0.001    0.000    0.001    0.000 {method 'readline' of '_io.TextIOWrapper' objects}
      1023    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:163(__getitem__)
-       11    0.001    0.000    0.001    0.000 {method 'send' of '_socket.socket' objects}
-     1011    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+      507    0.001    0.000    0.001    0.000 {built-in method nt._getfullpathname}
        62    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:223(_compile_charset)
-      750    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:690(<genexpr>)
-      567    0.001    0.000    0.001    0.000 {built-in method builtins.hasattr}
       647    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:253(get)
-      506    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+      254    0.000    0.000    0.001    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\ntpath.py:43(normcase)
+       11    0.001    0.000    0.001    0.000 {method 'send' of '_socket.socket' objects}
        62    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:250(_optimize_charset)
-     1005    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
-       45    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:34(__init__)
       894    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:232(__next)
+      507    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
         2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\linecache.py:37(getlines)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\linecache.py:82(updatecache)
-      505    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
-       71    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
-        1    0.000    0.000    0.000    0.000 {built-in method nt.listdir}
-      508    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:248(match)
+      762    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:687(<genexpr>)
+     1268    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+      271    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:643(getfile)
+     1775    0.000    0.000    0.000    0.000 {built-in method nt.fspath}
+     1015    0.000    0.000    0.000    0.000 {method 'startswith' of 'str' objects}
+      569    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:64(ismodule)
+      753    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:690(<genexpr>)
      2873    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      508    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:248(match)
+       13    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:318(decode)
+      569    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+     1009    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:448(open)
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:55(dumps)
+        1    0.000    0.000    0.000    0.000 {built-in method nt.listdir}
       709    0.000    0.000    0.000    0.000 {built-in method builtins.min}
-       48    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:795(__or__)
-       22    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:308(__init__)
       393    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:171(append)
-      346    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\encodings\__init__.py:71(search_function)
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:215(__init__)
-      253    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       48    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\enum.py:795(__or__)
+      507    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+       13    0.000    0.000    0.000    0.000 {built-in method _codecs.utf_8_decode}
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:55(dumps)
       276    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:111(__init__)
-       11    0.000    0.000    0.000    0.000 {built-in method select.select}
-       67    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:388(_simple)
-       69    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:330(getstate)
-      224    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:285(tell)
-       84    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:357(__iter__)
-      272    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:159(__len__)
-       11    0.000    0.000    0.000    0.000 {method 'dump' of '_pickle.Pickler' objects}
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:74(RLock)
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:617(__init__)
-        9    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:376(_mk_bitmap)
        42    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\encodings\__init__.py:71(search_function)
+       67    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:388(_simple)
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:215(__init__)
+      224    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:285(tell)
+       11    0.000    0.000    0.000    0.000 {built-in method select.select}
+      272    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:159(__len__)
+        9    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:34(__init__)
+      347    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        9    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:376(_mk_bitmap)
+       11    0.000    0.000    0.000    0.000 {method 'dump' of '_pickle.Pickler' objects}
       214    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:485(unwrap)
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:74(RLock)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:27(lerNGramas)
+      254    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+       16    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:355(detect_encoding)
        27    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:84(opengroup)
        32    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:342(_escape)
-       22    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:259(__init__)
-        1    0.000    0.000    0.000    0.000 {method 'readlines' of '_io._IOBase' objects}
         9    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:378(<listcomp>)
+       42    0.000    0.000    0.000    0.000 <string>:12(__new__)
+       42    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:891(tokeneater)
+        1    0.000    0.000    0.000    0.000 {method 'readlines' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:379(read_or_stop)
         2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:482(_compile_info)
        22    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\threading.py:1230(current_thread)
-      156    0.000    0.000    0.000    0.000 {built-in method builtins.max}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:379(read_or_stop)
-       11    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
-      358    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
         1    0.000    0.000    0.000    0.000 {method 'readline' of '_io.BufferedReader' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1089(choose_backend)
-       43    0.000    0.000    0.000    0.000 <string>:12(__new__)
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:295(_proxify)
-       43    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:891(tokeneater)
+      358    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+      156    0.000    0.000    0.000    0.000 {built-in method builtins.max}
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\encodings\__init__.py:43(normalize_encoding)
+       11    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\encodings\utf_8.py:33(getregentry)
-       77    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:150(debug)
-       59    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:81(groups)
-        2    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:295(_proxify)
         2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:828(fix_flags)
+        4    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:308(__init__)
+       59    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:81(groups)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:117(remove)
+        2    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:330(getstate)
+       77    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:150(debug)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:485(unwrap)
        11    0.000    0.000    0.000    0.000 {method '_acquire_restore' of '_thread.RLock' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:502(_is_wrapper)
+       43    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x630427B8}
         1    0.000    0.000    0.000    0.000 {built-in method builtins.__import__}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:93(__new__)
-        7    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:610(<genexpr>)
-       10    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:598(__init__)
-       11    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
-       13    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:294(_class_escape)
-        6    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:56(unicode)
-       44    0.000    0.000    0.000    0.000 {built-in method __new__ of type object at 0x63FC27B8}
        67    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:167(__setitem__)
-       39    0.000    0.000    0.000    0.000 {method 'span' of '_sre.SRE_Match' objects}
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:325(newseq)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:617(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:93(__new__)
+       12    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:357(__iter__)
+       13    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:294(_class_escape)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:502(_is_wrapper)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:678(enable_by_count)
-       11    0.000    0.000    0.000    0.000 {method '_release_save' of '_thread.RLock' objects}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:385(find_cookie)
-        7    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:253(iscode)
+       10    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:598(__init__)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:52(<listcomp>)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:53(<listcomp>)
+       39    0.000    0.000    0.000    0.000 {method 'span' of '_sre.SRE_Match' objects}
+       11    0.000    0.000    0.000    0.000 {built-in method _struct.pack}
+        7    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:610(<genexpr>)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:745(enable)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:685(disable_by_count)
        22    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:745(enable)
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:325(newseq)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\TrieTree.py:10(__init__)
+        4    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\codecs.py:259(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:385(find_cookie)
        11    0.000    0.000    0.000    0.000 {method 'acquire' of '_thread.RLock' objects}
+       11    0.000    0.000    0.000    0.000 {method '_release_save' of '_thread.RLock' objects}
         2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:223(__init__)
-        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:42(<listcomp>)
-        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeCorpus.py:43(<listcomp>)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1089(choose_backend)
         1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:997(_handle_fromlist)
-       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:249(decoderesponse)
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:604(items)
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:159(isfunction)
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\linecache.py:53(checkcache)
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:81(ismethod)
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:229(istraceback)
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:558(__init__)
-       29    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:73(isclass)
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:239(isframe)
+        7    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:253(iscode)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:251(__contains__)
+        6    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:56(unicode)
         9    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
-        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+       29    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
         2    0.000    0.000    0.000    0.000 {built-in method sys.settrace}
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:441(_get_charset_prefix)
-        4    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1101(<genexpr>)
-       11    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
-       11    0.000    0.000    0.000    0.000 {method 'getvalue' of '_io.BytesIO' objects}
-       11    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
-        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:76(__init__)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:752(disable)
+       11    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\idlelib\rpc.py:249(decoderesponse)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\TrieTree.py:4(__init__)
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:604(items)
+        1    0.000    0.000    0.000    0.000 {method 'seek' of '_io.BufferedReader' objects}
+       11    0.000    0.000    0.000    0.000 {method 'getvalue' of '_io.BytesIO' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:441(_get_charset_prefix)
         4    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:539(isstring)
+        2    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\classeDocumento.py:47(NGramas)
+        1    0.000    0.000    0.000    0.000 C:\wamp64\www\Algorithms-Data-Structures\Projects\Project #1(Plagio detectation)\DoublyLinkedList.py:52(isEmpty)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:882(__init__)
+       11    0.000    0.000    0.000    0.000 {method 'release' of '_thread.RLock' objects}
        11    0.000    0.000    0.000    0.000 {method '_is_owned' of '_thread.RLock' objects}
         1    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
-        1    0.000    0.000    0.000    0.000 {built-in method builtins.id}
-        3    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
        10    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
-        1    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_parse.py:76(__init__)
+       11    0.000    0.000    0.000    0.000 {method 'append' of 'collections.deque' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:73(isclass)
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:159(isfunction)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:558(__init__)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\tokenize.py:729(generate_tokens)
-        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:414(_get_literal_prefix)
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:81(ismethod)
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:229(istraceback)
+        2    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\inspect.py:239(isframe)
         1    0.000    0.000    0.000    0.000 {method 'startswith' of 'bytes' objects}
-        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        3    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\linecache.py:53(checkcache)
+        1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\sre_compile.py:414(_get_literal_prefix)
         1    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:655(wrap_function)
-        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
         1    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
         4    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
-        1    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
         1    0.000    0.000    0.000    0.000 {built-in method builtins.iter}
+        4    0.000    0.000    0.000    0.000 C:\Users\lytam\AppData\Local\Programs\Python\Python36-32\lib\site-packages\memory_profiler.py:1101(<genexpr>)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        1    0.000    0.000    0.000    0.000 {built-in method sys.getrecursionlimit}
         1    0.000    0.000    0.000    0.000 {built-in method sys.gettrace}
 
 

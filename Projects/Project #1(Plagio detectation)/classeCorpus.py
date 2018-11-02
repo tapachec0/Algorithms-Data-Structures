@@ -15,13 +15,23 @@
 from classeNGrama import NGrama
 from classeDocumento import *
 from DoublyLinkedList import *
+from TrieTree import *
 import os
 
 
 class Corpus:
     def __init__(self, pastaArquivo):
         self.__documentos = self.lerArquivos(pastaArquivo)
-    
+
+    def lerNGramas(self, documentos, n):
+        trie = TrieTree()
+        for documento in documentos:
+            documento.gerarNGramas(n)
+            for ngrama in documento.NGramas:
+                print(ngrama)
+                trie[str(ngrama)] = documento
+        return trie
+                           
     def lerArquivos(self, pasta):
         documentosReferencia = DoublyLinkedList()
         for nomeArquivo in os.listdir(pasta):
@@ -30,9 +40,12 @@ class Corpus:
         return documentosReferencia
    
     def verificaPlagio(self, documentoSuspeito, limiar, tamanhoNGrama):
+        self.__trieNGramas = self.lerNGramas(self.__documentos, tamanhoNGrama)
+        
         documentosPossiveisPlagiados = DoublyLinkedList()
         documentosOrdenados = DoublyLinkedList()
         documentoSuspeito.gerarNGramas(tamanhoNGrama)
+        
         for documento in self.__documentos:
             contencao = documentoSuspeito.contencao(documento)
             if contencao > limiar:

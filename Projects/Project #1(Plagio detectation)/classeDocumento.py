@@ -19,8 +19,9 @@ from classeNGrama import NGrama
 class Documento:
     
     def __init__(self, documento):
-        
+
         listaPalavras = DoublyLinkedList()
+        self.__nomeArquivo = documento
         self.__listaNGramas = DoublyLinkedList()
         self.__arquivo = open(documento, "r", encoding="utf8")
         palavra = ""
@@ -37,11 +38,7 @@ class Documento:
             linha = self.__arquivo.readline()
         listaPalavras.append(palavra)
         
-        
         self.__vetorPalavras = numpy.array(listaPalavras)
-        
-        
-
     
     @property
     def palavras(self):
@@ -52,7 +49,6 @@ class Documento:
         return self.__listaNGramas
         
     def gerarNGramas(self, n):
-    
         indice = 0
         self.__n = n
         while(indice <= (self.__vetorPalavras.size - self.__n)):
@@ -63,18 +59,14 @@ class Documento:
                 
     def contencao(self, documentoSuspeito):
         
-        documentoSuspeito.gerarNGramas(self.__n)
-        conjuntoNGramasIguais = 0
-        for nGramaOficial in self.__listaNGramas:
-            for nGramaSuspeito in documentoSuspeito.__listaNGramas:
-                if(str(nGramaOficial) == str(nGramaSuspeito)):
-                    conjuntoNGramasIguais += 1
                     
                
                 
         contencao = conjuntoNGramasIguais / len(documentoSuspeito.__listaNGramas)
         return contencao
-        
+
+    def __repr__(self):
+        return self.__nomeArquivo
                     
         
         
