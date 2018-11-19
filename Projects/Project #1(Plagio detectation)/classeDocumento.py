@@ -8,7 +8,7 @@
  Email:	tmrp@cin.ufpe.br
  Data:	2018-09-29
 
- Descricao: Formação de vetores de palavras a partir de uma lista de palavras 
+ Descricao: classe documento, que contem os metodos de gerar ngramas e contencao 
  Copyright(c) 2018 Talyta Pacheco
  '''
 
@@ -49,6 +49,8 @@ class Documento:
         return self.__listaNGramas
         
     def gerarNGramas(self, n):
+        ''' recebe o tamanho do ngrama a ser gerado, e após cria-los,
+        coloca na lista de ngramas'''
         indice = 0
         self.__n = n
         while(indice <= (self.__vetorPalavras.size - self.__n)):
@@ -57,16 +59,34 @@ class Documento:
             indice += 1
 
                 
-    def contencao(self, documentoSuspeito):
-        
-                    
-               
-                
-        contencao = conjuntoNGramasIguais / len(documentoSuspeito.__listaNGramas)
-        return contencao
+    def contencao(self, trieNGramas, limiar):
+        ''' recebe uma arvore trie com todos os ngramas de todos os documentos
+        da corpus, e faz a contencao do objeto com todos os outros documentos
+        que tenham pelo menos um ngrama igual'''
+        contencoes = {}
+        documentosPossiveisPlagiados = DoublyLinkedList()
+        for ngrama in self.NGramas:
+            docsEncontrados = trieNGramas[str(ngrama)]
+            if not docsEncontrados is None:
+                for documento in docsEncontrados:
+                    if documento in contencoes:
+                        contencoes[documento] += 1
+                    else:
+                        contencoes[documento] = 1
+                        
+        for documento in contencoes:
+            contencao = contencoes[documento]/len(documento.NGramas)
+            if contencao > limiar:
+                documentosPossiveisPlagiados.append((documento,contencao))
+
+        return documentosPossiveisPlagiados
+    
 
     def __repr__(self):
         return self.__nomeArquivo
+
+    def __str__(self):
+        return self.__repr__()
                     
         
         

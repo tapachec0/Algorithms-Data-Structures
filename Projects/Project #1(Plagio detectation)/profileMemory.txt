@@ -5,6 +5,6 @@ Line #    Mem usage    Increment   Line Contents
     40     40.6 MiB     40.6 MiB   @profileTime
     41                             @profile
     42                             def main_profileTime():
-    43     41.0 MiB      0.4 MiB       documentoSuspeito = Documento("dados/susp/suspicious-document00044.txt")
-    44     43.5 MiB      2.6 MiB       corpus = Corpus("dados/teste-src")
-    45     50.2 MiB      6.7 MiB       listaOrdenados = corpus.verificaPlagio(documentoSuspeito, 0.20, 3)
+    43     40.9 MiB      0.4 MiB       documentoSuspeito = Documento("dados/susp/suspicious-document00044.txt")
+    44     43.6 MiB      2.6 MiB       corpus = Corpus("dados/teste-src")
+    45    107.7 MiB     64.1 MiB       listaOrdenados = corpus.verificaPlagio(documentoSuspeito, 0.20, 3)

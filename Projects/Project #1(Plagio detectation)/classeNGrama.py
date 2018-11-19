@@ -28,7 +28,7 @@ class NGrama:
     def __repr__(self):
         return self.__str__()
         
-    def __eq__(self, otherObject):
-        return (self.__intervalo == otherObject.__intervalo).all() == True
+    def __eq__(self, outro):
+        return str(outro) == self.__str__()
     
 

@@ -41,7 +41,7 @@ def profileTime(fnc):
 @profile
 def main_profileTime():
     documentoSuspeito = Documento("dados/susp/suspicious-document00044.txt")
-    corpus = Corpus("dados/teste-src")
+    corpus = Corpus("dados/src")
     listaOrdenados = corpus.verificaPlagio(documentoSuspeito, 0.20, 3)
     
 if __name__ == "__main__":
